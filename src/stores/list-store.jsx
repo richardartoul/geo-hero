@@ -2,14 +2,30 @@ var Reflux = ('reflux');
 var ListActions = require('../actions/list-actions');
 
 var ListStore = Reflux.createStore({
-  // we use Reflux listenables to tell our store what actions it should listen for
+  // Tells store what actions it should listen for
   listenables: [ListActions],
+  // Store calls method that matches name of action when it occurs
+  create: function() {
 
-  // here is where we create any methods we want this store to handle
-  // the method name should match the action name we are receiving from ListActions 
-  
+  },
+  updateText: function() {
+
+  },
+  toggleComplete: function() {
+
+  },
+  toggleCompleteAll: function() {
+
+  },
+  destroy: function() {
+
+  },
+  destroyCompleted: function() {
+
+  }
   triggerChange: function() {
-    // should call the Reflux method this.trigger('change', /* data to listen for changes in*/);
+    // Call the Reflux method 
+    // this.trigger('change', /* data to listen for changes in*/);
   }
 });
 
